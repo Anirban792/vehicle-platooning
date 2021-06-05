@@ -1,0 +1,127 @@
+version 2
+run WithChannelSwitching-0-20210316-18:28:40-4107
+attr configname WithChannelSwitching
+attr datetime 20210316-18:28:40
+attr experiment WithChannelSwitching
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network Lucky
+attr processid 4107
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param *.**.nic.mac1609_4.useServiceChannel true
+param *.node[*].appl.dataOnSch true
+param *.rsu[*].appl.dataOnSch true
+param *.playgroundSizeX 2500m
+param *.playgroundSizeY 2500m
+param *.playgroundSizeZ 50m
+param *.annotations.draw true
+param *.manager.updateInterval 1s
+param *.manager.host "\"localhost\""
+param *.manager.port 9999
+param *.manager.autoShutdown true
+param *.manager.launchConfig "xmldoc(\"autobahn.launchd.xml\")"
+param *.rsu[0].mobility.x 1500
+param *.rsu[0].mobility.y 1000
+param *.rsu[0].mobility.z 3
+param *.rsu[*].applType "\"TraCIDemoRSU11p\""
+param *.rsu[*].appl.headerLength "80 bit"
+param *.rsu[*].appl.sendBeacons true
+param *.rsu[*].appl.dataOnSch false
+param *.rsu[*].appl.beaconInterval 5s
+param *.rsu[*].appl.beaconUserPriority 7
+param *.rsu[*].appl.dataUserPriority 5
+param *.rsu[*].nic.phy80211p.antennaOffsetZ "0 m"
+param *.connectionManager.sendDirect true
+param *.connectionManager.maxInterfDist 2600m
+param *.connectionManager.drawMaxIntfDist false
+param *.**.nic.mac1609_4.useServiceChannel false
+param *.**.nic.mac1609_4.txPower 20mW
+param *.**.nic.mac1609_4.bitrate 6Mbps
+param *.**.nic.phy80211p.minPowerLevel -110dBm
+param *.**.nic.phy80211p.useNoiseFloor true
+param *.**.nic.phy80211p.noiseFloor -98dBm
+param *.**.nic.phy80211p.decider "xmldoc(\"config.xml\")"
+param *.**.nic.phy80211p.analogueModels "xmldoc(\"config.xml\")"
+param *.**.nic.phy80211p.usePropagationDelay true
+param *.**.nic.phy80211p.antenna "xmldoc(\"antenna.xml\", \"/root/Antenna[@id='monopole']\")"
+param *.node[*].nic.phy80211p.antennaOffsetY "0 m"
+param *.node[*].nic.phy80211p.antennaOffsetZ "1.895 m"
+param *.node[*].applType "\"MyVeinsApp\""
+param *.node[*].appl.headerLength "80 bit"
+param *.node[*].appl.sendBeacons false
+param *.node[*].appl.dataOnSch false
+param *.node[*].appl.beaconInterval 1s
+param *.node[*].veinsmobility.x 0
+param *.node[*].veinsmobility.y 0
+param *.node[*].veinsmobility.z 0
+param *.node[*].veinsmobility.setHostSpeed false
+param *.node[*0].veinsmobility.accidentCount 0
+param *.node[*0].veinsmobility.accidentStart 73s
+param *.node[*0].veinsmobility.accidentDuration 50s
+
+vector 0 Lucky.node[0].veinsmobility posx ETV
+vector 1 Lucky.node[0].veinsmobility posy ETV
+vector 2 Lucky.node[0].veinsmobility speed ETV
+vector 3 Lucky.node[0].veinsmobility acceleration ETV
+vector 4 Lucky.node[0].veinsmobility co2emission ETV
+vector 5 Lucky.node[1].veinsmobility posx ETV
+vector 6 Lucky.node[1].veinsmobility posy ETV
+vector 7 Lucky.node[1].veinsmobility speed ETV
+vector 8 Lucky.node[1].veinsmobility acceleration ETV
+vector 9 Lucky.node[1].veinsmobility co2emission ETV
+vector 10 Lucky.node[2].veinsmobility posx ETV
+vector 11 Lucky.node[2].veinsmobility posy ETV
+0	21	1	30.1
+0	61	2	31.539281809283
+0	102	3	34.346844719513
+0	143	4	39.322833883972
+0	222	5	46.626594773098
+0	283	6	56.446824672725
+0	344	7	68.385912347189
+1	21	1	109.8
+1	61	2	109.8
+1	102	3	109.8
+1	143	4	109.8
+1	222	5	109.8
+1	283	6	109.8
+1	344	7	109.8
+2	61	2	1.4392818092834
+2	102	3	2.8075629102299
+2	143	4	4.9759891644586
+2	222	5	7.303760889126
+2	283	6	9.8202298996272
+2	344	7	11.939087674464
+3	102	3	1.3682811009465
+3	143	4	2.1684262542287
+3	222	5	2.3277717246674
+3	283	6	2.5164690105012
+3	344	7	2.1188577748369
+4	102	3	2.1732912127287
+4	143	4	3.9618293141696
+4	222	5	5.59568457941
+4	283	6	7.6268790251924
+4	344	7	7.9397858701584
+5	143	4	30.1
+5	222	5	31.395364899049
+5	283	6	35.236524183699
+5	344	7	41.53772978913
+6	143	4	109.8
+6	222	5	109.8
+6	283	6	109.8
+6	344	7	109.8
+7	222	5	1.2953648990485
+7	283	6	3.8411592846503
+7	344	7	6.3012056054314
+8	283	6	2.5457943856018
+8	344	7	2.4600463207811
+9	283	6	3.6572242613183
+9	344	7	5.172885581409
+10	344	7	30.1
+11	344	7	109.8
+

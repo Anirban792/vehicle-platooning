@@ -1,0 +1,98 @@
+file 56920 1619271336                                           
+version 2
+run WithBeaconing-0-20210424-19:05:16-6352
+attr configname WithBeaconing
+attr datetime 20210424-19:05:16
+attr experiment WithBeaconing
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network myTestNetwork
+attr processid 6352
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param *.rsu[*].appl.sendBeacons true
+param *.node[*].appl.sendBeacons true
+param *.playgroundSizeX 2500m
+param *.playgroundSizeY 2500m
+param *.playgroundSizeZ 50m
+param *.annotations.draw true
+param *.manager.updateInterval 1s
+param *.manager.host "\"localhost\""
+param *.manager.port 9999
+param *.manager.autoShutdown true
+param *.manager.launchConfig "xmldoc(\"autobahn.launchd.xml\")"
+param *.rsu[0].mobility.x 1500
+param *.rsu[0].mobility.y 1000
+param *.rsu[0].mobility.z 3
+param *.rsu[*].applType "\"TraCIDemoRSU11p\""
+param *.rsu[*].appl.headerLength "80 bit"
+param *.rsu[*].appl.sendBeacons true
+param *.rsu[*].appl.dataOnSch false
+param *.rsu[*].appl.beaconInterval 5s
+param *.rsu[*].appl.beaconUserPriority 7
+param *.rsu[*].appl.dataUserPriority 5
+param *.rsu[*].nic.phy80211p.antennaOffsetZ "0 m"
+param *.connectionManager.sendDirect true
+param *.connectionManager.maxInterfDist 2600m
+param *.connectionManager.drawMaxIntfDist false
+param *.**.nic.mac1609_4.useServiceChannel true
+param *.**.nic.mac1609_4.txPower 20mW
+param *.**.nic.mac1609_4.bitrate 6Mbps
+param *.**.nic.phy80211p.minPowerLevel -110dBm
+param *.**.nic.phy80211p.useNoiseFloor true
+param *.**.nic.phy80211p.noiseFloor -98dBm
+param *.**.nic.phy80211p.decider "xmldoc(\"config.xml\")"
+param *.**.nic.phy80211p.analogueModels "xmldoc(\"config.xml\")"
+param *.**.nic.phy80211p.usePropagationDelay true
+param *.**.nic.phy80211p.antenna "xmldoc(\"antenna.xml\", \"/root/Antenna[@id='monopole']\")"
+param *.node[*].nic.phy80211p.antennaOffsetY "0 m"
+param *.node[*].nic.phy80211p.antennaOffsetZ "1.895 m"
+param *.node[*].applType "\"VehicleControlApp\""
+param *.node[*].appl.headerLength "80 bit"
+param *.node[*].appl.sendBeacons false
+param *.node[*].appl.dataOnSch false
+param *.node[*].appl.beaconInterval 1s
+param *.node[*].veinsmobility.x 0
+param *.node[*].veinsmobility.y 0
+param *.node[*].veinsmobility.z 0
+param *.node[*].veinsmobility.setHostSpeed false
+param *.node[*0].veinsmobility.accidentCount 0
+param *.node[*0].veinsmobility.accidentStart 73s
+param *.node[*0].veinsmobility.accidentDuration 50s
+
+vector 0 myTestNetwork.node[0].veinsmobility posx ETV
+vector 1 myTestNetwork.node[0].veinsmobility posy ETV
+vector 2 myTestNetwork.node[0].veinsmobility speed ETV
+vector 3 myTestNetwork.node[0].veinsmobility acceleration ETV
+vector 4 myTestNetwork.node[0].veinsmobility co2emission ETV
+vector 5 myTestNetwork.node[1].veinsmobility posx ETV
+vector 6 myTestNetwork.node[1].veinsmobility posy ETV
+vector 7 myTestNetwork.node[2].veinsmobility posx ETV
+vector 8 myTestNetwork.node[2].veinsmobility posy ETV
+vector 9 myTestNetwork.node[1].veinsmobility speed ETV
+vector 10 myTestNetwork.node[1].veinsmobility acceleration ETV
+vector 11 myTestNetwork.node[1].veinsmobility co2emission ETV
+vector 12 myTestNetwork.node[2].veinsmobility speed ETV
+vector 13 myTestNetwork.node[2].veinsmobility acceleration ETV
+vector 14 myTestNetwork.node[2].veinsmobility co2emission ETV
+4	3401 3744 368 169812 3 200 198 0.973 3.9618293141696 196.8431205269 205.97817020994
+3	7145 2975 368 169812 3 200 198 -4.9759891644586 2.1684262542287 -1.4392818092834 31.334733756045
+2	10120 2985 187 169812 2 200 199 0 4.9759891644586 9.2228338839719 34.714409786242
+1	13105 3753 21 169812 1 200 200 109.8 109.8 21960 2411208
+0	16858 5742 21 169812 1 200 200 30.1 39.322833883972 7842.5844016712 307698.63917852
+11	22600 3873 1842 169812 6 200 195 0.973 0.973 189.735 184.612155
+10	26473 3093 1842 169812 6 200 195 0 0 0 0
+9	29566 2910 1008 169812 5 200 196 0 0 0 0
+6	32476 3709 549 169812 4 200 197 106.6 109.8 21003.4 2239313.8
+5	36185 3512 549 169812 4 200 197 30.1 30.1 5929.7 178483.97
+14	39697 3856 2703 169812 7 200 194 0.973 0.973 188.762 183.665426
+13	43553 3080 2703 169812 7 200 194 0 0 0 0
+12	46633 3093 1842 169812 6 200 195 0 0 0 0
+8	49726 3694 1008 169812 5 200 196 109.8 109.8 21520.8 2362983.84
+7	53420 3498 1008 169812 5 200 196 30.1 30.1 5899.6 177577.96
+

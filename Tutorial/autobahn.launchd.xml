@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+  <copy file= "autobahn.net.xml"/>
+  <copy file= "autobahn.rou.xml"/>
+  <copy file= "autobahn.sumocfg" type="config"/>
+</launch>

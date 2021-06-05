@@ -1,0 +1,115 @@
+file 25966 1619253771                                           
+version 2
+run General-0-20210316-18:17:17-3734
+attr configname General
+attr datetime 20210316-18:17:17
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network Lucky
+attr processid 3734
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param *.playgroundSizeX 2500m
+param *.playgroundSizeY 2500m
+param *.playgroundSizeZ 50m
+param *.annotations.draw true
+param *.manager.updateInterval 1s
+param *.manager.host "\"localhost\""
+param *.manager.port 9999
+param *.manager.autoShutdown true
+param *.manager.launchConfig "xmldoc(\"autobahn.launchd.xml\")"
+param *.rsu[0].mobility.x 1500
+param *.rsu[0].mobility.y 1000
+param *.rsu[0].mobility.z 3
+param *.rsu[*].applType "\"TraCIDemoRSU11p\""
+param *.rsu[*].appl.headerLength "80 bit"
+param *.rsu[*].appl.sendBeacons true
+param *.rsu[*].appl.dataOnSch false
+param *.rsu[*].appl.beaconInterval 5s
+param *.rsu[*].appl.beaconUserPriority 7
+param *.rsu[*].appl.dataUserPriority 5
+param *.rsu[*].nic.phy80211p.antennaOffsetZ "0 m"
+param *.connectionManager.sendDirect true
+param *.connectionManager.maxInterfDist 2600m
+param *.connectionManager.drawMaxIntfDist false
+param *.**.nic.mac1609_4.useServiceChannel false
+param *.**.nic.mac1609_4.txPower 20mW
+param *.**.nic.mac1609_4.bitrate 6Mbps
+param *.**.nic.phy80211p.minPowerLevel -110dBm
+param *.**.nic.phy80211p.useNoiseFloor true
+param *.**.nic.phy80211p.noiseFloor -98dBm
+param *.**.nic.phy80211p.decider "xmldoc(\"config.xml\")"
+param *.**.nic.phy80211p.analogueModels "xmldoc(\"config.xml\")"
+param *.**.nic.phy80211p.usePropagationDelay true
+param *.**.nic.phy80211p.antenna "xmldoc(\"antenna.xml\", \"/root/Antenna[@id='monopole']\")"
+param *.node[*].nic.phy80211p.antennaOffsetY "0 m"
+param *.node[*].nic.phy80211p.antennaOffsetZ "1.895 m"
+param *.node[*].applType "\"MyVeinsApp\""
+param *.node[*].appl.headerLength "80 bit"
+param *.node[*].appl.sendBeacons false
+param *.node[*].appl.dataOnSch false
+param *.node[*].appl.beaconInterval 1s
+param *.node[*].veinsmobility.x 0
+param *.node[*].veinsmobility.y 0
+param *.node[*].veinsmobility.z 0
+param *.node[*].veinsmobility.setHostSpeed false
+param *.node[*0].veinsmobility.accidentCount 0
+param *.node[*0].veinsmobility.accidentStart 73s
+param *.node[*0].veinsmobility.accidentDuration 50s
+
+vector 0 Lucky.node[0].veinsmobility posx ETV
+0	3684 1092 2 292 1 44 44 30.1 1337.7144399593 24326.611068734 21302969.608266
+vector 1 Lucky.node[0].veinsmobility posy ETV
+1	4776 672 2 292 1 44 44 109.8 109.8 4831.2 530465.76
+vector 2 Lucky.node[0].veinsmobility speed ETV
+2	5448 1087 3 292 2 44 43 1.4392818092834 39.981052548531 1307.6144399593 46389.449537649
+vector 3 Lucky.node[0].veinsmobility acceleration ETV
+3	6535 1103 4 292 3 44 42 -0.93260832407978 2.5865135943983 38.533974130405 84.939879445096
+vector 4 Lucky.node[0].veinsmobility co2emission ETV
+4	7638 1063 4 292 3 44 42 -0.33802111632441 29.293246763873 471.81521667616 7451.5659547349
+vector 5 Lucky.node[1].veinsmobility posx ETV
+5	8701 1025 5 292 4 44 41 30.1 1233.4039762895 20867.258644275 16813278.039437
+vector 6 Lucky.node[1].veinsmobility posy ETV
+6	9726 633 5 292 4 44 41 109.8 109.8 4501.8 494297.64
+vector 7 Lucky.node[1].veinsmobility speed ETV
+7	10359 1017 25 292 5 44 40 1.2953648990485 39.931163013913 1203.3039762895 42318.454280678
+vector 8 Lucky.node[1].veinsmobility acceleration ETV
+8	11376 1027 26 292 6 44 39 -0.84748769942671 2.5901939699426 38.218795013218 87.23318965915
+vector 9 Lucky.node[1].veinsmobility co2emission ETV
+9	12403 990 26 292 6 44 39 0.43148925147472 31.547938760774 444.53225709302 7143.4167316197
+vector 10 Lucky.node[2].veinsmobility posx ETV
+10	13393 995 27 292 7 44 38 30.1 1107.5325165564 17171.52608654 12322239.380573
+vector 11 Lucky.node[2].veinsmobility posy ETV
+11	14388 630 27 292 7 44 38 109.8 109.8 4172.4 458129.52
+vector 12 Lucky.node[2].veinsmobility speed ETV
+12	15018 980 28 292 8 44 37 2.4706868049456 39.951342706475 1077.4325165564 36990.211222738
+vector 13 Lucky.node[2].veinsmobility acceleration ETV
+13	15998 983 29 292 9 44 36 -1.1867502881214 2.4212151346728 36.312315857503 76.683753452484
+vector 14 Lucky.node[2].veinsmobility co2emission ETV
+14	16981 954 29 292 9 44 36 -2.725743446964 27.44872624198 406.10074341748 6341.071750303
+vector 15 Lucky.node[3].veinsmobility posx ETV
+15	17935 919 54 292 10 44 35 30.1 999.77198790745 14058.38823152 9108389.1937055
+vector 16 Lucky.node[3].veinsmobility posy ETV
+16	18854 585 54 292 10 44 35 109.8 109.8 3843 421961.4
+vector 17 Lucky.node[3].veinsmobility speed ETV
+17	19439 907 55 292 11 44 34 1.6184831429971 39.997062989185 969.67198790745 33402.774882874
+vector 18 Lucky.node[3].veinsmobility acceleration ETV
+18	20346 899 56 292 12 44 33 -1.0577970683808 2.5291831451468 37.776356332004 86.000222660855
+vector 19 Lucky.node[3].veinsmobility co2emission ETV
+19	21245 879 56 292 12 44 33 -1.5285797880752 28.274201075316 393.44163665455 6628.9000031651
+vector 20 Lucky.node[4].veinsmobility posx ETV
+20	22124 842 57 292 13 44 32 30.1 772.93402076986 10163.209699827 5084831.2626464
+vector 21 Lucky.node[4].veinsmobility posy ETV
+21	22966 537 57 292 13 44 32 109.8 109.8 3513.6 385793.28
+vector 22 Lucky.node[4].veinsmobility speed ETV
+22	23503 828 58 292 14 44 31 1.9850660084514 33.284798235588 742.83402076986 21286.831495223
+vector 23 Lucky.node[4].veinsmobility acceleration ETV
+23	24331 823 93 292 15 44 30 -0.74543783979025 2.4377285707975 30.584808876507 66.128511237621
+vector 24 Lucky.node[4].veinsmobility co2emission ETV
+24	25154 812 93 292 15 44 30 -0.065293645175894 23.286200217789 264.22568082659 3523.2368883955

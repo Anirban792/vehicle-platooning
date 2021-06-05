@@ -1,0 +1,116 @@
+file 43330 1619271556                                           
+version 2
+run Default-0-20210424-19:08:29-6392
+attr configname Default
+attr datetime 20210424-19:08:29
+attr experiment Default
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network myTestNetwork
+attr processid 6392
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param *.playgroundSizeX 2500m
+param *.playgroundSizeY 2500m
+param *.playgroundSizeZ 50m
+param *.annotations.draw true
+param *.manager.updateInterval 1s
+param *.manager.host "\"localhost\""
+param *.manager.port 9999
+param *.manager.autoShutdown true
+param *.manager.launchConfig "xmldoc(\"autobahn.launchd.xml\")"
+param *.rsu[0].mobility.x 1500
+param *.rsu[0].mobility.y 1000
+param *.rsu[0].mobility.z 3
+param *.rsu[*].applType "\"TraCIDemoRSU11p\""
+param *.rsu[*].appl.headerLength "80 bit"
+param *.rsu[*].appl.sendBeacons true
+param *.rsu[*].appl.dataOnSch false
+param *.rsu[*].appl.beaconInterval 5s
+param *.rsu[*].appl.beaconUserPriority 7
+param *.rsu[*].appl.dataUserPriority 5
+param *.rsu[*].nic.phy80211p.antennaOffsetZ "0 m"
+param *.connectionManager.sendDirect true
+param *.connectionManager.maxInterfDist 2600m
+param *.connectionManager.drawMaxIntfDist false
+param *.**.nic.mac1609_4.useServiceChannel true
+param *.**.nic.mac1609_4.txPower 20mW
+param *.**.nic.mac1609_4.bitrate 6Mbps
+param *.**.nic.phy80211p.minPowerLevel -110dBm
+param *.**.nic.phy80211p.useNoiseFloor true
+param *.**.nic.phy80211p.noiseFloor -98dBm
+param *.**.nic.phy80211p.decider "xmldoc(\"config.xml\")"
+param *.**.nic.phy80211p.analogueModels "xmldoc(\"config.xml\")"
+param *.**.nic.phy80211p.usePropagationDelay true
+param *.**.nic.phy80211p.antenna "xmldoc(\"antenna.xml\", \"/root/Antenna[@id='monopole']\")"
+param *.node[*].nic.phy80211p.antennaOffsetY "0 m"
+param *.node[*].nic.phy80211p.antennaOffsetZ "1.895 m"
+param *.node[*].applType "\"VehicleControlApp\""
+param *.node[*].appl.headerLength "80 bit"
+param *.node[*].appl.sendBeacons false
+param *.node[*].appl.dataOnSch false
+param *.node[*].appl.beaconInterval 1s
+param *.node[*].veinsmobility.x 0
+param *.node[*].veinsmobility.y 0
+param *.node[*].veinsmobility.z 0
+param *.node[*].veinsmobility.setHostSpeed false
+param *.node[*0].veinsmobility.accidentCount 0
+param *.node[*0].veinsmobility.accidentStart 73s
+param *.node[*0].veinsmobility.accidentDuration 50s
+
+vector 0 myTestNetwork.node[0].veinsmobility posx ETV
+vector 1 myTestNetwork.node[0].veinsmobility posy ETV
+vector 2 myTestNetwork.node[0].veinsmobility speed ETV
+vector 3 myTestNetwork.node[0].veinsmobility acceleration ETV
+vector 4 myTestNetwork.node[0].veinsmobility co2emission ETV
+vector 5 myTestNetwork.node[1].veinsmobility posx ETV
+vector 6 myTestNetwork.node[1].veinsmobility posy ETV
+vector 7 myTestNetwork.node[1].veinsmobility speed ETV
+vector 8 myTestNetwork.node[1].veinsmobility acceleration ETV
+vector 9 myTestNetwork.node[1].veinsmobility co2emission ETV
+vector 10 myTestNetwork.node[2].veinsmobility posx ETV
+vector 11 myTestNetwork.node[2].veinsmobility posy ETV
+vector 12 myTestNetwork.node[2].veinsmobility speed ETV
+vector 13 myTestNetwork.node[2].veinsmobility acceleration ETV
+vector 14 myTestNetwork.node[2].veinsmobility co2emission ETV
+vector 15 myTestNetwork.node[3].veinsmobility posx ETV
+vector 16 myTestNetwork.node[3].veinsmobility posy ETV
+vector 17 myTestNetwork.node[3].veinsmobility speed ETV
+vector 18 myTestNetwork.node[3].veinsmobility acceleration ETV
+vector 19 myTestNetwork.node[3].veinsmobility co2emission ETV
+vector 20 myTestNetwork.node[4].veinsmobility posx ETV
+vector 21 myTestNetwork.node[4].veinsmobility posy ETV
+vector 22 myTestNetwork.node[4].veinsmobility speed ETV
+vector 23 myTestNetwork.node[4].veinsmobility acceleration ETV
+vector 24 myTestNetwork.node[4].veinsmobility co2emission ETV
+4	3898 1572 102 7059 3 61 59 -1.1030275907297 29.293246763873 616.59138780124 8981.6151280306
+3	5470 1641 102 7059 3 61 59 -1.0171435368713 2.5865135943983 38.18182449576 88.088835204376
+2	7111 1597 61 7059 2 61 60 1.4392818092834 39.981052548531 1978.5058122539 72867.219603031
+1	8708 1013 21 7059 1 61 61 109.8 109.8 6697.8 735418.44
+0	9721 1600 21 7059 1 61 61 30.1 2008.6058122539 53109.580308748 70670848.437185
+9	11321 1575 283 7382 6 64 59 -2.2592516319883 31.547938760774 611.63344561634 9060.9314106721
+8	12896 1639 283 7382 6 64 59 -1.1369165567681 2.5901939699426 37.534500556858 92.798995258639
+7	14535 1602 222 7382 5 64 60 1.2953648990485 39.936834992818 1990.5588518372 73309.742710034
+6	16137 1021 143 7382 4 64 61 109.8 109.8 6697.8 735418.44
+5	17158 1612 143 7382 4 64 61 30.1 2020.6588518372 53816.106709595 72125052.799298
+14	18770 1638 505 7674 9 67 59 -2.725743446964 27.44872624198 610.23373666662 8976.349912688
+13	20408 1698 505 7674 9 67 59 -1.1867502881214 2.4212151346728 36.846027003671 85.410198597189
+12	22106 1664 424 7674 8 67 60 2.4706868049456 39.951342706475 1981.1807447392 72504.302593106
+11	23770 1088 344 7674 7 67 61 109.8 109.8 6697.8 735418.44
+10	24858 1681 344 7674 7 67 61 30.1 2011.2807447392 53491.109323068 71233638.468672
+19	26539 1645 811 7896 12 70 59 -2.7635394851901 28.274201075316 614.27531692656 9282.4923073755
+18	28184 1701 811 7896 12 70 59 -1.1915499806637 2.5291831451468 37.245690446766 94.20526055681
+17	29885 1672 710 7896 11 70 60 1.6184831429971 39.997062989185 1993.2878615612 73706.286513076
+16	31557 1094 610 7896 10 70 61 109.8 109.8 6697.8 735418.44
+15	32651 1681 610 7896 10 70 61 30.1 2023.3878615612 53889.192832778 72393978.118807
+24	34332 1891 1187 8436 15 82 68 -1.61799616028 23.286200217789 504.02931786338 5613.4384746015
+23	36223 1977 1187 8436 15 82 68 -1.1453273956198 2.4377285707975 31.296822580092 76.877192091965
+22	38200 1926 1032 8436 14 82 69 1.9850660084514 33.293002767863 1984.9787692956 61895.364923853
+21	40126 1259 912 8436 13 82 70 109.8 109.8 7686 843922.8
+20	41385 1943 912 8436 13 82 70 30.1 2015.0787692956 63736.254223037 85488557.528231
+

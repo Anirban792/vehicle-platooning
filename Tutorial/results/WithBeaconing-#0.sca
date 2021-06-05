@@ -1,0 +1,213 @@
+version 2
+run WithBeaconing-0-20210424-19:05:16-6352
+attr configname WithBeaconing
+attr datetime 20210424-19:05:16
+attr experiment WithBeaconing
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network myTestNetwork
+attr processid 6352
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param *.rsu[*].appl.sendBeacons true
+param *.node[*].appl.sendBeacons true
+param *.playgroundSizeX 2500m
+param *.playgroundSizeY 2500m
+param *.playgroundSizeZ 50m
+param *.annotations.draw true
+param *.manager.updateInterval 1s
+param *.manager.host "\"localhost\""
+param *.manager.port 9999
+param *.manager.autoShutdown true
+param *.manager.launchConfig "xmldoc(\"autobahn.launchd.xml\")"
+param *.rsu[0].mobility.x 1500
+param *.rsu[0].mobility.y 1000
+param *.rsu[0].mobility.z 3
+param *.rsu[*].applType "\"TraCIDemoRSU11p\""
+param *.rsu[*].appl.headerLength "80 bit"
+param *.rsu[*].appl.sendBeacons true
+param *.rsu[*].appl.dataOnSch false
+param *.rsu[*].appl.beaconInterval 5s
+param *.rsu[*].appl.beaconUserPriority 7
+param *.rsu[*].appl.dataUserPriority 5
+param *.rsu[*].nic.phy80211p.antennaOffsetZ "0 m"
+param *.connectionManager.sendDirect true
+param *.connectionManager.maxInterfDist 2600m
+param *.connectionManager.drawMaxIntfDist false
+param *.**.nic.mac1609_4.useServiceChannel true
+param *.**.nic.mac1609_4.txPower 20mW
+param *.**.nic.mac1609_4.bitrate 6Mbps
+param *.**.nic.phy80211p.minPowerLevel -110dBm
+param *.**.nic.phy80211p.useNoiseFloor true
+param *.**.nic.phy80211p.noiseFloor -98dBm
+param *.**.nic.phy80211p.decider "xmldoc(\"config.xml\")"
+param *.**.nic.phy80211p.analogueModels "xmldoc(\"config.xml\")"
+param *.**.nic.phy80211p.usePropagationDelay true
+param *.**.nic.phy80211p.antenna "xmldoc(\"antenna.xml\", \"/root/Antenna[@id='monopole']\")"
+param *.node[*].nic.phy80211p.antennaOffsetY "0 m"
+param *.node[*].nic.phy80211p.antennaOffsetZ "1.895 m"
+param *.node[*].applType "\"VehicleControlApp\""
+param *.node[*].appl.headerLength "80 bit"
+param *.node[*].appl.sendBeacons false
+param *.node[*].appl.dataOnSch false
+param *.node[*].appl.beaconInterval 1s
+param *.node[*].veinsmobility.x 0
+param *.node[*].veinsmobility.y 0
+param *.node[*].veinsmobility.z 0
+param *.node[*].veinsmobility.setHostSpeed false
+param *.node[*0].veinsmobility.accidentCount 0
+param *.node[*0].veinsmobility.accidentStart 73s
+param *.node[*0].veinsmobility.accidentDuration 50s
+
+scalar myTestNetwork.node[0].appl generatedWSMs 0
+scalar myTestNetwork.node[0].appl receivedWSMs 0
+scalar myTestNetwork.node[0].appl generatedBSMs 1989
+scalar myTestNetwork.node[0].appl receivedBSMs 3908
+scalar myTestNetwork.node[0].appl generatedWSAs 0
+scalar myTestNetwork.node[0].appl receivedWSAs 0
+scalar myTestNetwork.node[0].nic.phy80211p busyTime 0.0020632763819095
+scalar myTestNetwork.node[0].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar myTestNetwork.node[0].nic.mac1609_4 ReceivedBroadcasts 3908
+scalar myTestNetwork.node[0].nic.mac1609_4 SentPackets 1989
+scalar myTestNetwork.node[0].nic.mac1609_4 SentAcknowledgements 0
+scalar myTestNetwork.node[0].nic.mac1609_4 RetriesExceeded 0
+scalar myTestNetwork.node[0].nic.mac1609_4 SNIRLostPackets 40
+scalar myTestNetwork.node[0].nic.mac1609_4 RXTXLostPackets 0
+scalar myTestNetwork.node[0].nic.mac1609_4 TotalLostPackets 40
+scalar myTestNetwork.node[0].nic.mac1609_4 DroppedPacketsInMac 0
+scalar myTestNetwork.node[0].nic.mac1609_4 TooLittleTime 0
+scalar myTestNetwork.node[0].nic.mac1609_4 TimesIntoBackoff 1989
+scalar myTestNetwork.node[0].nic.mac1609_4 SlotsBackoff 3003
+scalar myTestNetwork.node[0].nic.mac1609_4 NumInternalContention 0
+scalar myTestNetwork.node[0].nic.mac1609_4 totalBusyTime 0.619437
+scalar myTestNetwork.node[0].nic.mac1609_4 retriesExceeded:count 0
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar myTestNetwork.node[0].nic.mac1609_4 sentAcks:count 0
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar myTestNetwork.node[0].nic.mac1609_4 sentPackets:count 1989
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar myTestNetwork.node[0].nic.mac1609_4 collisions:count 0
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar myTestNetwork.node[0].nic.mac1609_4 channelBusy:timeavg 0.0031127487437186
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+scalar myTestNetwork.node[0].veinsmobility startTime 1
+scalar myTestNetwork.node[0].veinsmobility totalTime 199
+scalar myTestNetwork.node[0].veinsmobility stopTime 200
+scalar myTestNetwork.node[0].veinsmobility minSpeed 0
+scalar myTestNetwork.node[0].veinsmobility maxSpeed 4.9759891644586
+scalar myTestNetwork.node[0].veinsmobility totalDistance 9.2228338839719
+scalar myTestNetwork.node[0].veinsmobility totalCO2Emission 196.8431205269
+scalar myTestNetwork.node[1].appl generatedWSMs 0
+scalar myTestNetwork.node[1].appl receivedWSMs 0
+scalar myTestNetwork.node[1].appl generatedBSMs 1959
+scalar myTestNetwork.node[1].appl receivedBSMs 3909
+scalar myTestNetwork.node[1].appl generatedWSAs 0
+scalar myTestNetwork.node[1].appl receivedWSAs 0
+scalar myTestNetwork.node[1].nic.phy80211p busyTime 0.002095387755102
+scalar myTestNetwork.node[1].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar myTestNetwork.node[1].nic.mac1609_4 ReceivedBroadcasts 3909
+scalar myTestNetwork.node[1].nic.mac1609_4 SentPackets 1959
+scalar myTestNetwork.node[1].nic.mac1609_4 SentAcknowledgements 0
+scalar myTestNetwork.node[1].nic.mac1609_4 RetriesExceeded 0
+scalar myTestNetwork.node[1].nic.mac1609_4 SNIRLostPackets 40
+scalar myTestNetwork.node[1].nic.mac1609_4 RXTXLostPackets 0
+scalar myTestNetwork.node[1].nic.mac1609_4 TotalLostPackets 40
+scalar myTestNetwork.node[1].nic.mac1609_4 DroppedPacketsInMac 0
+scalar myTestNetwork.node[1].nic.mac1609_4 TooLittleTime 0
+scalar myTestNetwork.node[1].nic.mac1609_4 TimesIntoBackoff 1959
+scalar myTestNetwork.node[1].nic.mac1609_4 SlotsBackoff 2929
+scalar myTestNetwork.node[1].nic.mac1609_4 NumInternalContention 0
+scalar myTestNetwork.node[1].nic.mac1609_4 totalBusyTime 0.616391
+scalar myTestNetwork.node[1].nic.mac1609_4 retriesExceeded:count 0
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar myTestNetwork.node[1].nic.mac1609_4 sentAcks:count 0
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar myTestNetwork.node[1].nic.mac1609_4 sentPackets:count 1959
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar myTestNetwork.node[1].nic.mac1609_4 collisions:count 0
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar myTestNetwork.node[1].nic.mac1609_4 channelBusy:timeavg 0.0031448520408163
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+scalar myTestNetwork.node[1].veinsmobility startTime 4
+scalar myTestNetwork.node[1].veinsmobility totalTime 196
+scalar myTestNetwork.node[1].veinsmobility stopTime 200
+scalar myTestNetwork.node[1].veinsmobility minSpeed 0
+scalar myTestNetwork.node[1].veinsmobility maxSpeed 0
+scalar myTestNetwork.node[1].veinsmobility totalDistance 3.2
+scalar myTestNetwork.node[1].veinsmobility totalCO2Emission 189.735
+scalar myTestNetwork.node[2].appl generatedWSMs 0
+scalar myTestNetwork.node[2].appl receivedWSMs 0
+scalar myTestNetwork.node[2].appl generatedBSMs 1949
+scalar myTestNetwork.node[2].appl receivedBSMs 3900
+scalar myTestNetwork.node[2].appl generatedWSAs 0
+scalar myTestNetwork.node[2].appl receivedWSAs 0
+scalar myTestNetwork.node[2].nic.phy80211p busyTime 0.0021007999999999
+scalar myTestNetwork.node[2].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar myTestNetwork.node[2].nic.mac1609_4 ReceivedBroadcasts 3900
+scalar myTestNetwork.node[2].nic.mac1609_4 SentPackets 1949
+scalar myTestNetwork.node[2].nic.mac1609_4 SentAcknowledgements 0
+scalar myTestNetwork.node[2].nic.mac1609_4 RetriesExceeded 0
+scalar myTestNetwork.node[2].nic.mac1609_4 SNIRLostPackets 39
+scalar myTestNetwork.node[2].nic.mac1609_4 RXTXLostPackets 0
+scalar myTestNetwork.node[2].nic.mac1609_4 TotalLostPackets 39
+scalar myTestNetwork.node[2].nic.mac1609_4 DroppedPacketsInMac 0
+scalar myTestNetwork.node[2].nic.mac1609_4 TooLittleTime 0
+scalar myTestNetwork.node[2].nic.mac1609_4 TimesIntoBackoff 3898
+scalar myTestNetwork.node[2].nic.mac1609_4 SlotsBackoff 2967
+scalar myTestNetwork.node[2].nic.mac1609_4 NumInternalContention 0
+scalar myTestNetwork.node[2].nic.mac1609_4 totalBusyTime 0.614301
+scalar myTestNetwork.node[2].nic.mac1609_4 retriesExceeded:count 0
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar myTestNetwork.node[2].nic.mac1609_4 sentAcks:count 0
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar myTestNetwork.node[2].nic.mac1609_4 sentPackets:count 1949
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar myTestNetwork.node[2].nic.mac1609_4 collisions:count 0
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar myTestNetwork.node[2].nic.mac1609_4 channelBusy:timeavg 0.0031502615384616
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+scalar myTestNetwork.node[2].veinsmobility startTime 5
+scalar myTestNetwork.node[2].veinsmobility totalTime 195
+scalar myTestNetwork.node[2].veinsmobility stopTime 200
+scalar myTestNetwork.node[2].veinsmobility minSpeed 0
+scalar myTestNetwork.node[2].veinsmobility maxSpeed 0
+scalar myTestNetwork.node[2].veinsmobility totalDistance 0
+scalar myTestNetwork.node[2].veinsmobility totalCO2Emission 188.762
+scalar myTestNetwork.manager roiArea 0
+scalar myTestNetwork.rsu[0].appl generatedWSMs 0
+scalar myTestNetwork.rsu[0].appl receivedWSMs 0
+scalar myTestNetwork.rsu[0].appl generatedBSMs 40
+scalar myTestNetwork.rsu[0].appl receivedBSMs 0
+scalar myTestNetwork.rsu[0].appl generatedWSAs 0
+scalar myTestNetwork.rsu[0].appl receivedWSAs 0
+scalar myTestNetwork.rsu[0].nic.phy80211p busyTime 0.0030664399999999
+scalar myTestNetwork.rsu[0].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar myTestNetwork.rsu[0].nic.mac1609_4 ReceivedBroadcasts 0
+scalar myTestNetwork.rsu[0].nic.mac1609_4 SentPackets 40
+scalar myTestNetwork.rsu[0].nic.mac1609_4 SentAcknowledgements 0
+scalar myTestNetwork.rsu[0].nic.mac1609_4 RetriesExceeded 0
+scalar myTestNetwork.rsu[0].nic.mac1609_4 SNIRLostPackets 5897
+scalar myTestNetwork.rsu[0].nic.mac1609_4 RXTXLostPackets 0
+scalar myTestNetwork.rsu[0].nic.mac1609_4 TotalLostPackets 5897
+scalar myTestNetwork.rsu[0].nic.mac1609_4 DroppedPacketsInMac 0
+scalar myTestNetwork.rsu[0].nic.mac1609_4 TooLittleTime 0
+scalar myTestNetwork.rsu[0].nic.mac1609_4 TimesIntoBackoff 40
+scalar myTestNetwork.rsu[0].nic.mac1609_4 SlotsBackoff 58
+scalar myTestNetwork.rsu[0].nic.mac1609_4 NumInternalContention 0
+scalar myTestNetwork.rsu[0].nic.mac1609_4 totalBusyTime 0.617488
+scalar myTestNetwork.rsu[0].nic.mac1609_4 retriesExceeded:count 0
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar myTestNetwork.rsu[0].nic.mac1609_4 sentAcks:count 0
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar myTestNetwork.rsu[0].nic.mac1609_4 sentPackets:count 40
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar myTestNetwork.rsu[0].nic.mac1609_4 collisions:count 0
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar myTestNetwork.rsu[0].nic.mac1609_4 channelBusy:timeavg 0.0030874399999999
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+

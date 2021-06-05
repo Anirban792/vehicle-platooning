@@ -1,0 +1,92 @@
+file 4189 1619253771                                            
+version 2
+run WithChannelSwitching-0-20210316-18:28:40-4107
+attr configname WithChannelSwitching
+attr datetime 20210316-18:28:40
+attr experiment WithChannelSwitching
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network Lucky
+attr processid 4107
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param *.**.nic.mac1609_4.useServiceChannel true
+param *.node[*].appl.dataOnSch true
+param *.rsu[*].appl.dataOnSch true
+param *.playgroundSizeX 2500m
+param *.playgroundSizeY 2500m
+param *.playgroundSizeZ 50m
+param *.annotations.draw true
+param *.manager.updateInterval 1s
+param *.manager.host "\"localhost\""
+param *.manager.port 9999
+param *.manager.autoShutdown true
+param *.manager.launchConfig "xmldoc(\"autobahn.launchd.xml\")"
+param *.rsu[0].mobility.x 1500
+param *.rsu[0].mobility.y 1000
+param *.rsu[0].mobility.z 3
+param *.rsu[*].applType "\"TraCIDemoRSU11p\""
+param *.rsu[*].appl.headerLength "80 bit"
+param *.rsu[*].appl.sendBeacons true
+param *.rsu[*].appl.dataOnSch false
+param *.rsu[*].appl.beaconInterval 5s
+param *.rsu[*].appl.beaconUserPriority 7
+param *.rsu[*].appl.dataUserPriority 5
+param *.rsu[*].nic.phy80211p.antennaOffsetZ "0 m"
+param *.connectionManager.sendDirect true
+param *.connectionManager.maxInterfDist 2600m
+param *.connectionManager.drawMaxIntfDist false
+param *.**.nic.mac1609_4.useServiceChannel false
+param *.**.nic.mac1609_4.txPower 20mW
+param *.**.nic.mac1609_4.bitrate 6Mbps
+param *.**.nic.phy80211p.minPowerLevel -110dBm
+param *.**.nic.phy80211p.useNoiseFloor true
+param *.**.nic.phy80211p.noiseFloor -98dBm
+param *.**.nic.phy80211p.decider "xmldoc(\"config.xml\")"
+param *.**.nic.phy80211p.analogueModels "xmldoc(\"config.xml\")"
+param *.**.nic.phy80211p.usePropagationDelay true
+param *.**.nic.phy80211p.antenna "xmldoc(\"antenna.xml\", \"/root/Antenna[@id='monopole']\")"
+param *.node[*].nic.phy80211p.antennaOffsetY "0 m"
+param *.node[*].nic.phy80211p.antennaOffsetZ "1.895 m"
+param *.node[*].applType "\"MyVeinsApp\""
+param *.node[*].appl.headerLength "80 bit"
+param *.node[*].appl.sendBeacons false
+param *.node[*].appl.dataOnSch false
+param *.node[*].appl.beaconInterval 1s
+param *.node[*].veinsmobility.x 0
+param *.node[*].veinsmobility.y 0
+param *.node[*].veinsmobility.z 0
+param *.node[*].veinsmobility.setHostSpeed false
+param *.node[*0].veinsmobility.accidentCount 0
+param *.node[*0].veinsmobility.accidentStart 73s
+param *.node[*0].veinsmobility.accidentDuration 50s
+
+vector 0 Lucky.node[0].veinsmobility posx ETV
+0	3173 162 21 344 1 7 7 30.1 68.385912347189 306.76829220578 14663.643667224
+vector 1 Lucky.node[0].veinsmobility posy ETV
+1	3335 103 21 344 1 7 7 109.8 109.8 768.6 84392.28
+vector 2 Lucky.node[0].veinsmobility speed ETV
+2	3438 148 61 344 2 7 6 1.4392818092834 11.939087674464 38.285912347189 327.03806269184
+vector 3 Lucky.node[0].veinsmobility acceleration ETV
+3	3586 125 102 344 3 7 5 1.3682811009465 2.5164690105012 10.499805865181 22.814961344196
+vector 4 Lucky.node[0].veinsmobility co2emission ETV
+4	3711 123 102 344 3 7 5 2.1732912127287 7.9397858701584 27.297470001659 172.94045545107
+vector 5 Lucky.node[1].veinsmobility posx ETV
+5	3834 88 143 344 4 7 4 30.1 41.53772978913 138.26961887188 4858.6745697276
+vector 6 Lucky.node[1].veinsmobility posy ETV
+6	3922 60 143 344 4 7 4 109.8 109.8 439.2 48224.16
+vector 7 Lucky.node[1].veinsmobility speed ETV
+7	3982 75 222 344 5 7 3 1.2953648990485 6.3012056054314 11.43772978913 56.137666953662
+vector 8 Lucky.node[1].veinsmobility acceleration ETV
+8	4057 50 283 344 6 7 2 2.4600463207811 2.5457943856018 5.0058407063829 12.53289695415
+vector 9 Lucky.node[1].veinsmobility co2emission ETV
+9	4107 49 283 344 6 7 2 3.6572242613183 5.172885581409 8.8301098427273 40.134034535924
+vector 10 Lucky.node[2].veinsmobility posx ETV
+10	4156 15 344 344 7 7 1 30.1 30.1 30.1 906.01
+vector 11 Lucky.node[2].veinsmobility posy ETV
+11	4171 18 344 344 7 7 1 109.8 109.8 109.8 12056.04
